@@ -22,7 +22,7 @@ function names() {
 
 
 
-    fetch("../header/headerMenu.html")
+    fetch("../../shared/header/headerMenu.html")
     .then (response => response.text())
     .then(html => {
         document.querySelector(".header__menu").innerHTML = html

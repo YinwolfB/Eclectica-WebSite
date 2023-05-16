@@ -18,7 +18,7 @@
     background-color: var(--principalColor);
     -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
-    box-shadow: 4.1rem 5px 5px 0px rgba(116, 116, 116, 0.75);
+    box-shadow: 4.0rem 5px 5px 0px rgba(116, 116, 116, 0.75);
 }
 
 .header__title{
@@ -62,6 +62,9 @@
 .header__button:hover{
     background-color: var(--principalColorHover);
     color: var(--black);
+    -webkit-box-shadow: 9px 7px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 7px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
 }
 
 
