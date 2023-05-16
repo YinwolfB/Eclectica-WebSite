@@ -1,3 +1,132 @@
 .servicios__container{
     padding-top: 12rem;
+    text-align: center;
+    font-family: var(--fontUbuntu);
+    
+}
+
+
+
+
+.servicios__container-phrase{
+    color: var(--black);
+
+    margin-bottom: 2rem
+}
+
+
+.categories__container{
+    width: 100%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 1.3rem;
+    border-top: 1px solid rgb(202, 200, 200);
+
+    
+}
+
+
+.categories__card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: .6rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.categories__card-header{
+    width: 100%;
+}
+
+
+
+.categories__card-img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    transition: filter .8s;
+}
+
+.categories__card:hover .categories__card-img{
+    filter: brightness(70%);
+    filter: blur(5px);
+} 
+
+
+.categories__card-description{
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(224, 218, 217, 0.74);
+    position: absolute;
+    padding: 1rem;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .8s ease;
+}
+
+
+.categories__card:hover .categories__card-description{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .7rem;
+} 
+
+
+
+
+.categories__card-footer{
+    background-color: rgb(77, 77, 71);
+    padding: .5rem;
+    width: 100%;
+    display: flex;
+    color: var(--principalColor);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all .8s ease;
+}
+
+
+.categories__card:hover .categories__card-footer{
+    padding: .5rem;
+    width: 80%;
+    bottom: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1rem;
+    background-color: rgba(41, 39, 39, 0.651);
+    border-radius: 1rem;
+} 
+
+
+
+
+
+
+
+@media(min-width: 600px){
+    .categories__container{
+        grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+        gap: 2rem;
+    }
+}
+
+
+
+@media(min-width: 1000px){
+    .categories__container{
+        grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+        gap: 2rem;
+    }
 }
