@@ -51,6 +51,7 @@
 .header__button{
     background-color: var(--principalColor);
     width: 4rem;
+    height: 50px;
     border: transparent;
     cursor: pointer;
     transition: all .5s;
@@ -58,6 +59,14 @@
     -moz-box-shadow: 9px 7px 7px 0px rgba(0,0,0,0.75);
     box-shadow: 9px 7px 7px 0px rgba(0,0,0,0.75);
     z-index: -1;
+}
+
+
+
+.header__button-icon{
+    color: black;
+    width: auto;
+    height: auto;
 }
 
 .header__button:hover{
@@ -93,7 +102,7 @@
     height: 100vh;
     list-style: none;
     position: absolute;
-    left: -100%;
+    left: -200%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -109,6 +118,7 @@
 .header__ul-show{
     left: -60%;
     top: 0;
+    text-align: end;
 }
 
 
@@ -118,16 +128,15 @@
 
 .header__li{
     color: var(--black);
-    -webkit-text-stroke: .5px black;    /* Borde */
     padding: .5rem;
     width: 8rem;
     cursor: pointer;
+    font-weight: 500;
 }
 
 
 .header__li:hover{
     color: var(--principalColor);
-    -webkit-text-stroke: 0px black;    /* Borde */
 }
 
 
@@ -172,6 +181,10 @@
         box-shadow: 1px 5px 5px 0px rgba(116, 116, 116, 0.75);
     }
 
+
+    .header__li{
+        font-size: .9rem;
+    }
 
 
     .header__li:hover{
