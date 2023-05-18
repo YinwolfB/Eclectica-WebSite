@@ -1,8 +1,10 @@
 .servicios__container{
     padding-top: 12rem;
     text-align: center;
-    font-family: var(--fontUbuntu);
-    
+    font-weight: 300;
+    color: var(--black);
+    font-family: var(--fontRaleway);
+
 }
 
 
@@ -11,7 +13,13 @@
 .servicios__container-phrase{
     color: var(--black);
 
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    padding-top: .5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--black);
+    font-family: var(--fontRaleway);
 }
 
 
@@ -69,6 +77,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all .8s ease;
+
+
+    font-weight: 300;
+    line-height: 2rem;
+    color: var(--black);
+    font-family: var(--fontRaleway);
 }
 
 

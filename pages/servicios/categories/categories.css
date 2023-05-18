@@ -1,6 +1,9 @@
 .projects__container{
     padding-top: 12rem;
     text-align: center;
+
+    color: var(--black);
+    font-family: var(--fontRaleway);
 }
 
 
@@ -12,10 +15,22 @@
     padding: 1rem;
 }   
 
+.projects__title{
+    text-transform: uppercase;
+    font-family: var(--fontRaleway);
+
+}
+
 .projects__phrase{
     padding: .5rem 1rem 1rem 1rem;
     line-height: 1.5rem;
     font-style: italic;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: var(--black);
+    font-family: var(--fontRaleway);
 }
 
 .projects__element{
@@ -51,6 +66,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all .5s ease;
+
 }
 
 .projects__element:hover .projects__element-title{
