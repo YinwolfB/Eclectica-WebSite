@@ -84,7 +84,7 @@
 .productIndi__slider-img{
     width: 100%;
     aspect-ratio: 1.5;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 

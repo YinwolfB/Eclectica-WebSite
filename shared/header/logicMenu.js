@@ -16,9 +16,8 @@ function names() {
     btnMenuClose.addEventListener("click", () => {
         containerMenu.classList.remove("header__ul-show")
     })
-    
-    
 }
+
 
 
 
