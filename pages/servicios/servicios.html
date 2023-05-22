@@ -8,8 +8,8 @@
     <title>Eclectica</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../servicios/servicios.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -29,8 +29,8 @@
 
         <div class="categories__container">
 
-
-            <div data-aos="zoom-in">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="center-center">
                 <div class="categories__card">
                     <a href="../../pages/servicios/categories/espacios/espacios.html">
 
@@ -51,7 +51,8 @@
             </div>
 
 
-            <div data-aos="zoom-in">
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="center-center">
                 <div class="categories__card">
                     <a href="../../pages/servicios/categories/branding/branding.html">
                         <section class="categories__card-header">
@@ -69,8 +70,8 @@
                 </div>
             </div>
 
-
-            <div data-aos="zoom-in">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
                 <div class="categories__card">
                     <a href="../../pages/servicios/categories/producto/producto.html">
 
@@ -89,7 +90,8 @@
                 </div>
             </div>
 
-            <div data-aos="zoom-in">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
             <div class="categories__card">
                 <a href="../../pages/servicios/categories/packaging/packaging.html">
 
@@ -108,8 +110,8 @@
             </div>
         </div>
 
-
-        <div data-aos="zoom-in">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
             <div class="categories__card">
                 <a href="../../pages/servicios/categories/audiovisual/audiovisual.html">
 
@@ -125,12 +127,13 @@
                         <h3 class="categories__card-name">Audiovisual</h3>
                     </section>
                 </a>
-            </div>
+            </div>  
         </div>
 
 
 
-        <div data-aos="zoom-in">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
             <div class="categories__card">
                 <a href="../../pages/servicios/categories/digital/digital.html">
 
@@ -147,9 +150,11 @@
                     </section>
                 </a>
             </div>
-        </div>
+        </div>  
 
-        <div data-aos="zoom-in">
+
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
             <div class="categories__card">
                 <a href="../../pages/servicios/categories/eventos/eventos.html">
 
@@ -168,7 +173,8 @@
             </div>
         </div>
 
-        <div data-aos="zoom-in">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-center">
             <div class="categories__card">
                 <a href="../../pages/servicios/categories/produccion/produccion.html">
 
@@ -189,9 +195,6 @@
 
 
 
-
-
-
         </div>
 
     </section>
@@ -201,11 +204,12 @@
     <script src="../../shared/header/logicMenu.js"></script>
     <script src="../../shared/footer/footer.js"></script>
     <script src="../../shared/loading.js"></script>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            mirror: true
+        });
     </script>
 </body>
 
