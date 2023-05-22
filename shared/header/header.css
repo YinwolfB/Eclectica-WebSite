@@ -184,15 +184,15 @@
 
 
     .header__li{
-        font-size: .9rem;
-        transition: font-size .5s;
+        font-size: .8rem;
+        transition: font-size .4s;
     }
 
 
     .header__li:hover{
         color: var(--colorHoverOverYellow);
         text-decoration: underline;
-        font-size: 1.2rem;
+        font-size: .9rem;
     }
 }
 
