@@ -31,6 +31,16 @@
 }
 
 
+.projectIndi__main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .projectIndi__description{
     width: 80%;
     max-width: 600px;
@@ -114,8 +124,29 @@
 
 
 
-@media(min-width: 500px ){
-    .projectIndi__slider{
-        width: 500px;
+@media(min-width: 750px ){
+
+
+    .projectIndi__main{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0 1rem;
+        align-items: center;
+        justify-content: center;
     }
+
+
+    .projectIndi__slider{
+        min-width: 200px;
+        width: 50%;
+        max-width: 800px;
+    }
+
+
+    .projectIndi__description{
+        width: 50%;
+        max-width: 600px;
+    }
+
 }
