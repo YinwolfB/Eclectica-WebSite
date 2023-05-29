@@ -19,7 +19,7 @@
     backface-visibility: hidden;
     overflow: hidden;
     transition: .5s;
-    background-color:var(--principalgrey);
+    background-color:var(--black);
 }
 
 .card .front {
@@ -34,8 +34,8 @@
     font-family: var(--fontUbuntu);
     font-size: 2rem;
     line-height: 0.2rem;
-    color: black;
-    background-color: var(--principalgrey);
+    color: #FFFFFF;
+    background-color: var(--black);
     text-align: center; 
 }
 
@@ -82,7 +82,7 @@
     overflow: hidden;
     font-size: 35px;
     line-height: 40px;
-    color: black;
+    color: #FFFFFF;
 }
 .content__container {
     font-weight: 600;
