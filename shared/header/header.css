@@ -134,6 +134,14 @@
     position: absolute;
     bottom: calc(-120px*4);
     right: 0;
+    text-align: center;
+    padding-right: 1rem;
+    transition: color .3s;
+    font-weight: bold;
+}
+
+.header__chat:hover{
+    color: var(--principalColor);
 }
 
 

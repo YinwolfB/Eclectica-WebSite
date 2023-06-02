@@ -6,14 +6,14 @@
     justify-content: center;
 }
 
-.card {
+.nosotros__card{
     position: relative;
     width: 100%;
-    height: 350px; 
+    height: 450px; 
     cursor: pointer;
 }
 
-.card .face {
+.nosotros__face{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -23,14 +23,14 @@
     background-color:var(--black);
 }
 
-.card .front {
+.nosotros__face-front{
     transform: perspective(2000px) rotateY(0deg);
     box-shadow: 0 5px 10px #34495e;
 }
 
-.card .front h3 {
+.nosotros__title-front{
     position: absolute;
-    top: 40%;
+    top: 35%;
     width: 100%;
     font-family: var(--fontUbuntu);
     font-size: 2rem;
@@ -39,9 +39,10 @@
     text-align: center; 
 }
 
-.nosotros__saber_mas{
+.nosotros__saber-mas{
     position: absolute;
     color: aliceblue;
+    width: max-content;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -49,7 +50,7 @@
     text-decoration: underline;
 }
 
-.card .back {
+.nosotros__face-back{
     transform: perspective(2000px) rotateY(180deg);
     background: var(--black);
     padding: 1rem;
@@ -61,7 +62,7 @@
     box-shadow: 0 5px 10px #000;
 }
 
-.card .back h3 {
+.nosotros__title-back {
     font-size: 2rem;
     font-family: var(--fontUbuntu);
     color: var(--principalColor);
@@ -70,35 +71,35 @@
     letter-spacing: 0.2rem;
 }
 
-.card .back p {
+.nosotros_paragraph {
     letter-spacing: 0.2rem;
     line-height: 1.7rem;
     font-family: var(--fontRaleway);
 } 
 
-.card .back .nosotros__paragraph_contentkey{
+.nosotros__paragraph-U{
+    font-size: 2rem;
+}
+
+.nosotros__paragraph-Key{
     color: var(--principalColor);
     font-size: 1.1rem;
     text-transform: capitalize;
 }
-.card .back .nosotros__paragraph_contentU{
-    font-size: 2rem;
-}
 
 
-.card:hover .front {
+.nosotros__card:hover .nosotros__face-front {
     transform: perspective(2000px) rotateY(180deg);
 }
 
-.card:hover .back {
+.nosotros__card:hover .nosotros__face-back {
     transform: perspective(2000px) rotateY(360deg);
 }
 
-
-.content {
+.nosotros__content-container {
     position: absolute;
     padding-right: 80px;
-    top: 75%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 150px;
@@ -107,22 +108,23 @@
     line-height: 40px;
     color: #FFFFFF;
 }
-.content__container {
+
+.nosotros__content {
     font-weight: 600;
     overflow: hidden;
     height: 40px;
     padding: 0 40px;
 }
-.content__container:before {
+.nosotros__content-container:before {
     content: "<";
     left: 22%;
 }
-.content__container:after {
+.nosotros__content-container:after {
     content: ">";
     position: absolute;
     right: 18%;
 }
-.content__container:after, .content__container:before {
+.nosotros__content-container:after, .nosotros__content-container:before {
     position: absolute;
     top: 0;
     color: var(--principalColor);
@@ -135,12 +137,8 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-.content__container__text {
-    display: inline;
-    float: left;
-    margin: 0;
-}
-.content__container__list {
+
+.nosotros__content-list {
     margin-top: 0;
     padding-left: 110px;
     text-align: left;
@@ -152,7 +150,7 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-.content__container__list__item {
+.nosotros__content-item {
     line-height: 40px;
     margin: 0;
 }
@@ -215,7 +213,20 @@
 }
 
 @media(min-width:450px){
-    .nosotros__saber_mas{
+    
+    .nosotros__card{
+        height: 350px; 
+    }
+
+    .nosotros__saber-mas{
         display: none;
+    }
+
+    .nosotros__title-front{
+        top: 40%;
+    }
+
+    .nosotros__content-container {
+        top: 75%;
     }
 }
