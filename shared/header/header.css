@@ -129,8 +129,12 @@
     color: var(--principalColor);
 }
 
-
-
+.header__chat{
+    color: green;
+    position: absolute;
+    bottom: calc(-120px*4);
+    right: 0;
+}
 
 
 
@@ -181,7 +185,15 @@
         text-decoration: underline;
         font-size: .9rem;
     }
+
+    .header__chat{
+        color: green;
+        position: absolute;
+        bottom: calc(-120px*5);
+    }
+    
 }
+
 
 
 
