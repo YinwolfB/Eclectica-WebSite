@@ -9,7 +9,8 @@
 .card {
     position: relative;
     width: 100%;
-    height: 300px; 
+    height: 350px; 
+    cursor: pointer;
 }
 
 .card .face {
@@ -29,13 +30,23 @@
 
 .card .front h3 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
     font-family: var(--fontUbuntu);
     font-size: 2rem;
     line-height: 0.2rem;
-    color: #FFFFFF;
+    color: var(--principalColor);
     text-align: center; 
+}
+
+.nosotros__saber_mas{
+    position: absolute;
+    color: aliceblue;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--principalColor);
+    text-decoration: underline;
 }
 
 .card .back {
@@ -53,6 +64,7 @@
 .card .back h3 {
     font-size: 2rem;
     font-family: var(--fontUbuntu);
+    color: var(--principalColor);
     margin-top: 1rem;
     margin-bottom: 1rem;
     letter-spacing: 0.2rem;
@@ -60,8 +72,19 @@
 
 .card .back p {
     letter-spacing: 0.2rem;
+    line-height: 1.7rem;
     font-family: var(--fontRaleway);
 } 
+
+.card .back .nosotros__paragraph_contentkey{
+    color: var(--principalColor);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.card .back .nosotros__paragraph_contentU{
+    font-size: 2rem;
+}
+
 
 .card:hover .front {
     transform: perspective(2000px) rotateY(180deg);
@@ -74,8 +97,9 @@
 
 .content {
     position: absolute;
-    top: 89%;
-    left: 46%;
+    padding-right: 80px;
+    top: 75%;
+    left: 50%;
     transform: translate(-50%, -50%);
     height: 150px;
     overflow: hidden;
@@ -90,13 +114,13 @@
     padding: 0 40px;
 }
 .content__container:before {
-    content: "[";
-    left: 30%;
+    content: "<";
+    left: 22%;
 }
 .content__container:after {
-    content: "]";
+    content: ">";
     position: absolute;
-    right: 5%;
+    right: 18%;
 }
 .content__container:after, .content__container:before {
     position: absolute;
@@ -187,5 +211,11 @@
     }
     83.3%, 95.96% {
     transform: translate3d(0, -25%, 0);
+    }
+}
+
+@media(min-width:450px){
+    .nosotros__saber_mas{
+        display: none;
     }
 }
