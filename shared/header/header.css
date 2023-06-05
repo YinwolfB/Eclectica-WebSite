@@ -130,7 +130,10 @@
 }
 
 .header__chat{
+    background-color: rgba(240, 248, 255, 0.13);
     color: green;
+    padding: .7rem;
+    border-radius: .5rem;
     position: absolute;
     bottom: calc(-120px*4);
     right: 0;
@@ -142,6 +145,7 @@
 
 .header__chat:hover{
     color: var(--principalColor);
+    background-color: rgba(71, 72, 73, 0.849);
 }
 
 
@@ -195,7 +199,6 @@
     }
 
     .header__chat{
-        color: green;
         position: absolute;
         bottom: calc(-120px*5);
     }
