@@ -11,6 +11,18 @@
     width: 100%;
     height: 450px; 
     cursor: pointer;
+    animation: enter 1.5s normal ease;
+}
+
+
+@keyframes enter{
+    0%{
+        filter: opacity(0);
+    }
+
+    100%{
+        filter: opacity(1);
+    }
 }
 
 .nosotros__face{
