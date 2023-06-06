@@ -24,6 +24,20 @@
     aspect-ratio: 1;
 }
 
+.footer__header-img{
+    animation: rotation 15s infinite  linear;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .footer__redes{
     display: flex;
     gap: 1rem;
