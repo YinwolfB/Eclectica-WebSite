@@ -1,7 +1,95 @@
 .projects__container{
-    padding-top: 12rem;
+    padding-top: 7.6rem;
     text-align: center;
+    font-weight: 300;
+    color: var(--black);
+    font-family: var(--fontRaleway);
 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.projects__header{
+    background-color: var(--black);
+    padding-top: 1.3rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    line-height: 1.5rem;
+    
+}
+
+
+.projects__header-title{
+    color: var(--principalColor);
+    animation: opacity 1s normal linear;
+}
+
+.projects__header-phrase{
+    color: aliceblue;
+    font-weight: bold;
+    margin: 0 .8rem;
+    font-size: 1rem;
+    animation: opacity 3s normal linear;
+}
+
+.projects__header-images{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.projects__header-svg{
+    width: 65%;
+    animation: opacity 3s normal ease;
+}
+
+
+@keyframes opacity{
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+
+.projects__header-button{
+    background-color: var(--principalColor);
+    color: var(--black);
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: .4rem;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+.projects__header-button:hover{
+    background-color: var(--principalColorHover);
+}
+
+
+
+.projects__container-phrase{
+    color: var(--black);
+    margin-bottom: 2rem;
+    padding-top: .5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
     color: var(--black);
     font-family: var(--fontRaleway);
 }
@@ -86,4 +174,46 @@
         gap: 1rem;
         padding: 1rem;
     }   
+
+    .projects__header-phrase{
+        font-size: 1.2rem;
+    }
+    
+    .projects__header-svg{
+        width: 50%;
+    }
+}
+
+
+@media(min-width:700px){
+
+    
+    .projects__header-svg{
+        width: 45%;
+    }
+}
+
+
+@media(min-width:850px){
+
+    
+    .projects__header-svg{
+        width: 40%;
+    }
+}
+
+@media(min-width:1000px){
+
+    
+    .projects__header-svg{
+        width: 30%;
+    }
+}
+
+@media(min-width:1200px){
+
+    
+    .projects__header-svg{
+        width: 25%;
+    }
 }
