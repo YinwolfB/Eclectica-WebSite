@@ -24,11 +24,13 @@ html{
     justify-content: flex-start;
     gap: 1rem;
     line-height: 1.5rem;
+    animation: translate 1.5s normal ease;
+
 }
 
 .servicios__header-title{
     color: var(--principalColor);
-    animation: opacity 1s normal linear;
+    animation: translate 1.5s normal ease;
 }
 
 .servicios__header-phrase{
@@ -36,7 +38,7 @@ html{
     font-weight: bold;
     margin: 0 1rem;
     font-size: 1.2rem;
-    animation: opacity 3s normal linear;
+    animation: translate 1.5s normal ease;
 }
 
 .servicios__header-images{
@@ -50,18 +52,9 @@ html{
 
 .servicios__header-svg{
     width: 80%;
-    animation: opacity 3s normal ease;
+    animation: translate 1.5s normal ease;
 }
 
-
-@keyframes opacity{
-    0%{
-        filter: opacity(0);
-    }
-    100%{
-        filter: opacity(1);
-    }
-}
 
 .servicios__header-button{
     background-color: var(--principalColor);
@@ -71,7 +64,19 @@ html{
     padding: .4rem;
     border-radius: .5rem;
     margin-bottom: .5rem;
+    animation: translate 1.5s normal ease;
 }
+
+@keyframes translate{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+
+    }
+}
+
 
 
 .servicios__header-button:hover{
@@ -96,7 +101,7 @@ html{
 
 .categories__container{
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 1.5rem;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
